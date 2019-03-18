@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('#navigation li').live('click', function() {
+                $('#navigation li').removeClass('selected');
+                $(this).addClass('selected');
+            })
+        </script>
+        <style type="text/css">
+            #navigation li {
+                list-style:none;
+                float:left;
+                padding:5px;
+            }
+            #navigation {
+                cursor:pointer;
+            }
+            #navigation .selected {
+                background-color:green;
+                color:white;
+            }
+        </style>
+
+    <title>Home App</title>
+  </head>
+  <body>
+    <a href="http://localhost:3000/process_create">create</a>
+
+    <ul id="navigation">
+            <li><a href="index.html">HOME</a></li>
+            <li class="selected"><a href="feed.html">FEED</a></li>
+            <li><a href="alarm.html">ALARM</a></li>
+            <li><a href="rank.html">RANK</a></li>
+    </ul>
+
+
+  </body>
+</html>
