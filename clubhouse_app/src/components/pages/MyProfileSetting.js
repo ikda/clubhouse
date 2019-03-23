@@ -10,7 +10,7 @@ const MyProfileSetting = () => (
     <p>
       <MyProfileSettingForm />
     </p>
-    <p>  
+    <p>
       <MyClubs />
     </p>
 
